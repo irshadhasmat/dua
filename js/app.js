@@ -87,11 +87,23 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services'])
       }
     })
     
+
     .state('tab.durood', {
       url: '/durood',
       views: {
         'tab-dash': {
           templateUrl: 'templates/tab-durood.html',
+
+        }
+      }
+    })
+
+    .state('tab.99namesList', {
+      url: '/99namesList',
+      views: {
+        'tab-dash': {
+          templateUrl: 'templates/tab-99names-List.html',
+
           controller: '99NamesCtrl'
         }
       }
