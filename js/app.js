@@ -86,6 +86,16 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services'])
         }
       }
     })
+    
+    .state('tab.durood', {
+      url: '/durood',
+      views: {
+        'tab-dash': {
+          templateUrl: 'templates/tab-durood.html',
+          controller: '99NamesCtrl'
+        }
+      }
+    })
 
   // if none of the above states are matched, use this as the fallback
   $urlRouterProvider.otherwise('/tab/dash');
