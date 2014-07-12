@@ -93,7 +93,6 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services'])
       views: {
         'tab-dash': {
           templateUrl: 'templates/tab-durood.html',
-
         }
       }
     })
@@ -103,7 +102,16 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services'])
       views: {
         'tab-dash': {
           templateUrl: 'templates/tab-99namesList.html',
-
+          controller: '99NamesCtrl'
+        }
+      }
+    })
+    
+    .state('tab.tasbeeh', {
+      url: '/tasbeeh',
+      views: {
+        'tab-dash': {
+          templateUrl: 'templates/tasbeeh.html',
           controller: '99NamesCtrl'
         }
       }
