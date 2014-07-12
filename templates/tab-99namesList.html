@@ -1,14 +1,13 @@
 <ion-view title="99 Names of Allah" ng-controller="99NamesCtrl">
-<ion-nav-buttons side="right">
-      <a class="button" href="#tab/99names">
-        Detail
-      </a>
+    <ion-nav-buttons side="right">
+        <a class="button icon ion-navicon-round" href="#tab/99names">
+        </a>
     </ion-nav-buttons>
     <ion-content class="has-header padding">
-        
+
         <div class="card" style=" text-align: center" ng-repeat="name in Names">
             <div class="item item-divider">
-                
+
                 <h2>{{ name.transliteration}}</h2>
             </div>
             <div class="item item-text-wrap">

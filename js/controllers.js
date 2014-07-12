@@ -16,5 +16,12 @@ angular.module('starter.controllers', [])
 
         .controller('99NamesCtrl', function($scope, NamesOfAllah) {
             $scope.Names = NamesOfAllah.all();
-            
-        });
+        })
+
+        .controller('TasbeehCtrl', function($scope) {
+            $scope.count = 0;
+            $scope.onTap = function() {
+                $scope.count++;
+            };
+        })
+        ;

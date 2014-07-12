@@ -112,7 +112,7 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services'])
       views: {
         'tab-dash': {
           templateUrl: 'templates/tasbeeh.html',
-          controller: '99NamesCtrl'
+          controller: 'TasbeehCtrl'
         }
       }
     })
