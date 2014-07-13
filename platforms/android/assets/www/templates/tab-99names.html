@@ -1,0 +1,16 @@
+<ion-view title="99 Names of Allah" ng-controller="99NamesCtrl">
+    <ion-content class="has-header padding">
+        <ion-slide-box>
+            <ion-slide ng-repeat="name in Names">
+                <div style="min-height: 50px; text-align: center">
+                    <h1 style="color: #346E15;"><b>{{ name.name}}</b></h1>
+                    <h1>{{ name.transliteration}}</h1>
+                    <h1>{{ name.meaning}}</h1>
+                    <hr>
+                    <h2>{{ name.explanation}}</h2>
+                </div>
+            </ion-slide>
+        </ion-slide-box>
+    </ion-content>
+</ion-view>
+
