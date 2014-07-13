@@ -1,6 +1,7 @@
 angular.module('starter.controllers', [])
 
         .controller('DashCtrl', function($scope) {
+            
         })
 
         .controller('FriendsCtrl', function($scope, Friends) {
@@ -13,7 +14,7 @@ angular.module('starter.controllers', [])
 
         .controller('AccountCtrl', function($scope) {
         })
-        
+
         .controller('DuroodCtrl', function($scope) {
 //        $scope.durood =
 //                [{'id':'1', 'name':'Durood Ibrahim', 'ArabicText':'اللَّهُمَّ صَلِّ عَلَى مُحَمَّدٍ وَعَلَى آلِ مُحَمَّدٍ
@@ -28,11 +29,32 @@ angular.module('starter.controllers', [])
             $scope.Names = NamesOfAllah.all();
         })
 
-        .controller('TasbeehCtrl', function($scope,$cordovaVibration) {
+        .controller('TasbeehCtrl', function($scope, $cordovaVibration,$cordovaDevice) {
             $scope.count = 0;
+            $scope.tasbeeh = "سُبْحَانَ اللّهِ";
+            $scope.inEnglish = "Subhaanallah";
             $scope.onTap = function() {
                 $scope.count++;
-                $cordovaVibration.vibrate(100);
+
+                if($scope.count == 33)
+                {
+                    $scope.tasbeeh = "الْحَمْدُللّهِ";
+                    $scope.inEnglish = "Alhamdulillah";
+                    $cordovaVibration.vibrate(50);
+                }
+                else if($scope.count == 66)
+                {
+                    $scope.tasbeeh = "الله أكبر";
+                    $scope.inEnglish = "Allahu Akbar";
+                    $cordovaVibration.vibrate(50);
+                }
+                else if($scope.count == 100)
+                {
+                    $cordovaVibration.vibrate(1000);
+                    $scope.count = 0;
+                    $scope.tasbeeh = "سُبْحَانَ اللّهِ";
+                    $scope.inEnglish = "Subhaanallah";
+                }
             };
         })
         ;
