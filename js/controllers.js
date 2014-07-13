@@ -28,10 +28,11 @@ angular.module('starter.controllers', [])
             $scope.Names = NamesOfAllah.all();
         })
 
-        .controller('TasbeehCtrl', function($scope) {
+        .controller('TasbeehCtrl', function($scope,$cordovaVibration) {
             $scope.count = 0;
             $scope.onTap = function() {
                 $scope.count++;
+                $cordovaVibration.vibrate(100);
             };
         })
         ;
