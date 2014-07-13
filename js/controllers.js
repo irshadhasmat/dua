@@ -13,6 +13,16 @@ angular.module('starter.controllers', [])
 
         .controller('AccountCtrl', function($scope) {
         })
+        
+        .controller('DuroodCtrl', function($scope) {
+            $scope.durood = 
+            [{'id':'1','name':'Durood Ibrahim','ArabicText':'اللَّهُمَّ صَلِّ عَلَى مُحَمَّدٍ وَعَلَى آلِ مُحَمَّدٍ
+كَمَا صَلَّيْتَ عَلَى إِبْرَاهِيمَ وَعَلَى آلِ إِبْرَاهِيمَ
+.إِنَّكَ حَمِيدٌ مَجِيدٌ
+اللَّهُمَّ بَارِكْ عَلَى مُحَمَّدٍ، وَعَلَى آلِ مُحَمَّدٍ
+كَمَا بَارَكْتَ عَلَى إِبْرَاهِيمَ وَعَلَى آلِ إِبْرَاهِيمَ
+.إِنَّكَ حَمِيدٌ مَجِيدٌ'}]
+        })
 
         .controller('99NamesCtrl', function($scope) {
             $scope.Names = 
