@@ -96,6 +96,15 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services','n
         }
       }
     })
+    
+    .state('tab.ayatul-kursi', {
+      url: '/ayatul-kursi',
+      views: {
+        'tab-dash': {
+          templateUrl: 'templates/tab-ayatul-kursi.html',
+        }
+      }
+    })
 
     .state('tab.99namesList', {
       url: '/99namesList',
