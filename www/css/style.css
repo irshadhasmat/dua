@@ -1,1 +1,14 @@
 /* Empty. Add your own CSS if you like */
+@font-face {
+    font-family: 'PDMS_Saleem';
+    src: url('fonts/PDMS_Saleem.eot');
+    src: url('fonts/PDMS_Saleem.eot') format('embedded-opentype'),
+         url('fonts/PDMS_Saleem.woff2') format('woff2'),
+         url('fonts/PDMS_Saleem.woff') format('woff'),
+         url('fonts/PDMS_Saleem.ttf') format('truetype'),
+         url('fonts/PDMS_Saleem.svg#PDMS_Saleem') format('svg');
+}
+
+.arabic{   
+    font-family: "PDMS_Saleem";
+}
